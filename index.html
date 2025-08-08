@@ -26,6 +26,12 @@
     .logo {
       max-width: 60px;
     }
+    .logo-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
     .profile-img {
       max-width: 100px;
       border-radius: 50%;
@@ -72,33 +78,69 @@
       margin-top: 3rem;
     }
     .contact a { color: #fff; text-decoration: none; }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo {
+        max-width: 40px;
+      }
+
+      .logo-row {
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+
+      .profile-img {
+        max-width: 80px;
+        margin-top: 1rem;
+      }
+
+      .header-content h1 {
+        font-size: 1.8rem;
+      }
+
+      .header-content p {
+        font-size: 1rem;
+      }
+
+      .container {
+        padding: 0 0.5rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      ul li {
+        font-size: 0.95rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-  <div style="display: flex; flex-direction: column; align-items: flex-start;">
-    <div style="display: flex; gap: 10px;">
-      <img src="assets/Admin.png" alt="admin" class="logo">
-      <img src="assets/PD1.png" alt="PD1" class="logo">
+    <div class="logo-row">
+      <img src="assets/admin.png" alt="Logo" class="logo">
+      <img src="assets/PD1.png" alt="Logo" class="logo">
+      <img src="assets/Zoho.png" alt="Logo" class="logo">
     </div>
-    <div style="margin-top: 10px;">
-      <img src="assets/zoho.png" alt="Zoho" class="logo">
+    <div class="header-content">
+      <h1>Pruthvi Kumar Dibba</h1>
+      <p>Salesforce Developer | 4+ Years IT Experience</p>
+      <p>Former Refrigeration Project Engineer with 6 Years GCC Experience</p>
+      <li><strong>Email:</strong> <a href="mailto:dpruthvi91@gmail.com" style="color: white;">dpruthvi91@gmail.com</a></li>
     </div>
-  </div>
-  <div class="header-content">
-    <h1>Pruthvi Kumar Dibba</h1>
-    <p>Salesforce Developer | 4+ Years IT Experience</p>
-    <p>Former Refrigeration Project Engineer with 6 Years GCC Experience</p>
-    <li><strong>Email:</strong> <a href="mailto:dpruthvi91@gmail.com" style="color: white;">dpruthvi91@gmail.com</a></li>
-  </div>
-  <img src="assets/profile.jpg" alt="Pruthvi's Photo" class="profile-img" style="max-width: 130px;">
-</header>
-
+    <img src="assets/profile.jpg" alt="Pruthvi's Photo" class="profile-img">
+  </header>
 
   <div class="container">
     <section class="card">
       <h2>Summary</h2>
-      <p>Salesforce-Certifiedfied professional with 4 years of experience in CRM development and process automation. Skilled in Salesforce customization, Zoho Mail/CRM setup, and front-end development (HTML, CSS, JavaScript, GitHub). Proven ability to deliver complete CRM and web solutions tailored to business needs.</p>
+      <p>Salesforce-Certified professional with 4 years of experience in CRM development and process automation. Skilled in Salesforce customization, Zoho Mail/CRM setup, and front-end development (HTML, CSS, JavaScript, GitHub). Proven ability to deliver complete CRM and web solutions tailored to business needs.</p>
     </section>
 
     <section class="card">
@@ -115,7 +157,7 @@
       <ul>
         <li>Salesforce Certified Administrator</li>
         <li>Salesforce Platform Developer I</li>
-		<li><a href="https://www.salesforce.com/trailblazer/pdibba" target="_blank">Trailhead Profile</a> </li>
+        <li><a href="https://www.salesforce.com/trailblazer/pdibba" target="_blank">Trailhead Profile</a></li>
       </ul>
     </section>
 
@@ -124,13 +166,13 @@
       <h3>Qualex Consulting Pvt Ltd (Jan 2022 – Present)</h3>
       <p><strong>Projects:</strong></p>
       <ul>
-		<li class="project-title">VishTek Group – UAE</li>
+        <li class="project-title">VishTek Group – UAE</li>
         <li>Configured Zoho Mail for domain verification, SPF/DKIM/DMARC setup, and mailbox/alias creation</li>
         <li>Implemented Zoho CRM with custom modules, automated rules, and integrated web forms</li>
         <li>Designed a responsive, cross-browser website using HTML5, CSS3, and JavaScript — <a href="https://www.vishtekgroup.com" target="_blank">www.vishtekgroup.com</a></li>
         <li>Used GitHub for code version control and collaborative development</li>
         <li>Managed DNS settings and provided post-deployment client training and support</li>
-	  
+
         <li class="project-title">Verablue.ai - VB Studio</li>
         <li>Implemented loyalty programs, auction processes, and custom Flows</li>
         <li>Created Apex classes, triggers, and integrated external APIs</li>
@@ -143,8 +185,6 @@
         <li class="project-title">Salesforce Administration</li>
         <li>Managed users, roles, profiles, workflow rules, and automated processes</li>
         <li>Handled data migration, troubleshooting, and platform support</li>
-
-        
       </ul>
 
       <h3>Fanar Al Khaleej Tr, UAE (May 2015 – Jun 2021)</h3>
