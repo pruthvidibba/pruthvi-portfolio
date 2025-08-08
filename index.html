@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pruthvi Kumar Dibba | Salesforce Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/profile.jpg" type="image/png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -57,8 +58,14 @@
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.5rem;
     }
-    ul { list-style: none; }
-    li { margin-bottom: 0.5rem; }
+    ul { list-style: none; padding-left: 1rem; }
+    ul ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
     .card {
       background: rgba(255, 255, 255, 0.95);
       padding: 1rem;
@@ -84,40 +91,22 @@
         flex-direction: column;
         text-align: center;
       }
-
       .logo {
         max-width: 40px;
       }
-
       .logo-row {
         justify-content: center;
         margin-bottom: 1rem;
       }
-
       .profile-img {
         max-width: 80px;
         margin-top: 1rem;
       }
-
-      .header-content h1 {
-        font-size: 1.8rem;
-      }
-
-      .header-content p {
-        font-size: 1rem;
-      }
-
-      .container {
-        padding: 0 0.5rem;
-      }
-
-      h2 {
-        font-size: 1.4rem;
-      }
-
-      ul li {
-        font-size: 0.95rem;
-      }
+      .header-content h1 { font-size: 1.8rem; }
+      .header-content p { font-size: 1rem; }
+      .container { padding: 0 0.5rem; }
+      h2 { font-size: 1.4rem; }
+      ul li { font-size: 0.95rem; }
     }
   </style>
 </head>
@@ -163,60 +152,82 @@
 
     <section class="card">
       <h2>Professional Experience</h2>
+
       <h3>Qualex Consulting Pvt Ltd (Jan 2022 – Present)</h3>
-      <p><strong>Projects:</strong></p>
       <ul>
-        <li class="project-title">VishTek Group – UAE</li>
-        <li>Configured Zoho Mail for domain verification, SPF/DKIM/DMARC setup, and mailbox/alias creation</li>
-        <li>Implemented Zoho CRM with custom modules, automated rules, and integrated web forms</li>
-        <li>Designed a responsive, cross-browser website using HTML5, CSS3, and JavaScript — <a href="https://www.vishtekgroup.com" target="_blank">www.vishtekgroup.com</a></li>
-        <li>Used GitHub for code version control and collaborative development</li>
-        <li>Managed DNS settings and provided post-deployment client training and support</li>
-
-        <li class="project-title">Verablue.ai - VB Studio</li>
-        <li>Implemented loyalty programs, auction processes, and custom Flows</li>
-        <li>Created Apex classes, triggers, and integrated external APIs</li>
-        <li>Used CDC and Platform Events for real-time data sync</li>
-
-        <li class="project-title">HR Management System</li>
-        <li>Automated HR workflows, built Visualforce pages, and custom Apex logic</li>
-        <li>Implemented dashboards and data upload functionality</li>
-
-        <li class="project-title">Salesforce Administration</li>
-        <li>Managed users, roles, profiles, workflow rules, and automated processes</li>
-        <li>Handled data migration, troubleshooting, and platform support</li>
+        <li>
+          <span class="project-title">VishTek Group – UAE</span>
+          <ul>
+            <li>Configured Zoho Mail for domain verification, SPF/DKIM/DMARC setup, and mailbox/alias creation.</li>
+            <li>Implemented Zoho CRM with custom modules, automated rules, and integrated web forms.</li>
+            <li>Designed a responsive website using HTML5, CSS3, JavaScript — <a href="https://www.vishtekgroup.com" target="_blank">www.vishtekgroup.com</a></li>
+            <li>Used GitHub for version control and DNS configuration.</li>
+            <li>Delivered training and post-deployment support.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="project-title">Verablue.ai - VB Studio</span>
+          <ul>
+            <li>Implemented loyalty programs, auction processes, and custom Flows.</li>
+            <li>Developed Apex classes, triggers, and external API integrations.</li>
+            <li>Used CDC and Platform Events for real-time sync.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="project-title">HR Management System</span>
+          <ul>
+            <li>Built Visualforce pages and Apex logic for HR automation.</li>
+            <li>Implemented dashboards and data upload modules.</li>
+          </ul>
+        </li>
+        <li>
+          <span class="project-title">Salesforce Administration</span>
+          <ul>
+            <li>Handled user roles, workflow automation, and data migration.</li>
+            <li>Managed org health, data troubleshooting, and support tasks.</li>
+          </ul>
+        </li>
       </ul>
 
       <h3>Fanar Al Khaleej Tr, UAE (May 2015 – Jun 2021)</h3>
       <p>Worked as a <strong>Refrigeration Project Engineer</strong> managing the <strong>installation and commissioning</strong> of refrigeration systems across multiple international locations. Led cross-functional teams, coordinated with vendors and clients, and ensured successful delivery of refrigeration and HVAC projects in warehouses, cold storage, and industrial food facilities.</p>
-      <p><strong>Key Overseas Project Locations & Highlights:</strong></p>
+      <p><strong>Key Overseas Projects:</strong></p>
       <ul>
-        <li class="project-title">Noon Logistics - UAE</li>
-        <li>Installation of Freon refrigeration plants and cold store systems.</li>
-
-        <li class="project-title">33K Warehouse HVAC, LVQ - Qatar</li>
-        <li>Installed advanced HVAC chilled water systems for warehouse cooling.</li>
-
-        <li class="project-title">NFPC Mega Plant - Kizad, Abu Dhabi</li>
-        <li>Installed ammonia refrigeration, chilled water, and steam plant piping.</li>
-
-        <li class="project-title">Warehousing World - Bahrain</li>
-        <li>Freon refrigeration, cold store, and floor heater installation.</li>
-
-        <li class="project-title">Djibha Food Processing - Djibouti, Africa</li>
-        <li>Installed Freon-based refrigeration and cold store systems.</li>
-
-        <li class="project-title">Bu Sulba Warehousing Park - Al Wukaire, Qatar</li>
-        <li>Led Freon refrigeration installation for cold chain infrastructure.</li>
-
-        <li class="project-title">Al Mathen - Jebel Ali</li>
-        <li>Commissioned ammonia-based refrigeration plants.</li>
-
-        <li class="project-title">High Food - Jebel Ali</li>
-        <li>Executed ammonia refrigeration system installations.</li>
-
-        <li class="project-title">United Food - Jebel Ali</li>
-        <li>Installed ammonia refrigeration and chilled water systems for food processing.</li>
+        <li><strong class="project-title">Noon Logistics - UAE</strong>
+          <ul>
+            <li>Installation of Freon refrigeration and cold store systems.</li>
+          </ul>
+        </li>
+        <li><strong class="project-title">33K Warehouse HVAC, LVQ - Qatar</strong>
+          <ul>
+            <li>Installed advanced HVAC chilled water systems.</li>
+          </ul>
+        </li>
+        <li><strong class="project-title">NFPC Mega Plant - Kizad, Abu Dhabi</strong>
+          <ul>
+            <li>Ammonia refrigeration, chilled water, and steam plant piping installation.</li>
+          </ul>
+        </li>
+        <li><strong class="project-title">Warehousing World - Bahrain</strong>
+          <ul>
+            <li>Freon refrigeration and floor heater system setup.</li>
+          </ul>
+        </li>
+        <li><strong class="project-title">Djibha Food Processing - Djibouti</strong>
+          <ul>
+            <li>Installed Freon-based refrigeration and cold storage units.</li>
+          </ul>
+        </li>
+        <li><strong class="project-title">Bu Sulba Warehousing - Qatar</strong>
+          <ul>
+            <li>Led cold chain Freon refrigeration project.</li>
+          </ul>
+        </li>
+        <li><strong class="project-title">Al Mathen / High Food / United Food - Jebel Ali</strong>
+          <ul>
+            <li>Commissioned multiple ammonia-based refrigeration plants.</li>
+          </ul>
+        </li>
       </ul>
     </section>
 
