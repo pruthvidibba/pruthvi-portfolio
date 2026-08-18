@@ -51,6 +51,49 @@ footer{padding:25px;text-align:center;background:#04101b;color:#71869b;font-size
 .modal{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.85);align-items:center;justify-content:center;padding:20px}.modal.active{display:flex}.modal-content{width:min(900px,100%);background:#000;border-radius:12px;overflow:hidden;position:relative}.modal video{width:100%;display:block}.modal-close{position:absolute;top:10px;right:15px;z-index:5;color:#fff;font-size:1.8rem;cursor:pointer}
 @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero-profile{order:-1}.projects-grid,.skills-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;padding:20px;background:var(--dark);flex-direction:column}.nav-links.active{display:flex}.hero{min-height:auto;padding:80px 0}.profile-wrapper{width:190px;height:190px}.projects-grid,.skills-grid,.cert-grid,.contact-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}section{padding:65px 0}.section-header h2{font-size:1.8rem}.hero h1{font-size:2.5rem}}
+.video-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+margin-top: 40px;
+}
+
+.video-item {
+position: relative;
+width: 100%;
+aspect-ratio: 16 / 9;
+overflow: hidden;
+border-radius: 12px;
+background: #000;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.video-item iframe {
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+.youtube-button {
+text-align: center;
+margin-top: 35px;
+}
+
+.youtube-button a {
+display: inline-block;
+padding: 12px 24px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: 600;
+}
+
+@media (max-width: 768px) {
+.video-grid {
+grid-template-columns: 1fr;
+}
+}
+
+
 </style>
 </head>
 
@@ -314,6 +357,80 @@ footer{padding:25px;text-align:center;background:#04101b;color:#71869b;font-size
   </div>
 </section>
 
+<section id="salesforce-videos">
+  <div class="container">
+
+```
+<div class="section-header">
+  <span class="section-label">Video Portfolio</span>
+  <h2>Salesforce Videos</h2>
+  <p>
+    Salesforce tutorials, administration, development, CPQ and
+    practical CRM solutions.
+  </p>
+</div>
+
+<div class="video-grid">
+
+  <!-- Video 1 -->
+  <div class="video-item">
+    <iframe
+      src="https://www.youtube.com/embed/EEL95sT1yoI"
+      title="Salesforce Tutorial"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="video-item">
+    <iframe
+      src="https://www.youtube.com/embed/XCzrDvARR3s"
+      title="Salesforce Administration"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Video 3 -->
+  <div class="video-item">
+    <iframe
+      src="https://www.youtube.com/embed/0B8A4skQKBE"
+      title="Salesforce Development"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Video 4 -->
+  <div class="video-item">
+    <iframe
+      src="https://www.youtube.com/embed/67dokkcOeQ"
+      title="Salesforce CPQ"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
+
+<div class="youtube-button">
+  <a href="https://www.youtube.com/@SalesforceAdmin-xk3pi"
+     target="_blank"
+     rel="noopener noreferrer">
+    View All Salesforce Videos on YouTube
+  </a>
+</div>
+```
+
+  </div>
+</section>
+
+  
 <section id="gallery">
   <div class="container">
     <div class="section-header">
