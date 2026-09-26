@@ -3,589 +3,2680 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pruthvi Kumar Dibba | Salesforce Developer | Project Engineer</title>
-  <meta name="description" content="Pruthvi Kumar Dibba - Salesforce Administrator, Salesforce Developer, CRM & Sales Operations professional and Project Engineer with 10+ years of professional experience.">
+
+  <title>Pruthvi Kumar Dibba | HVAC Project Engineer | Technical Sales | Salesforce</title>
+
+  <meta name="description" content="Pruthvi Kumar Dibba - Senior HVAC Project Engineer & Sales Engineer with 11+ years of professional experience across HVAC, industrial refrigeration, technical sales, project execution and Salesforce CRM.">
+
   <meta name="author" content="Pruthvi Kumar Dibba">
+
   <link rel="icon" href="assets/profile.jpg" type="image/jpeg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
-:root{--primary:#0b5cab;--secondary:#00a1e0;--dark:#071827;--text:#25364a;--muted:#6b7a90;--light:#f5f8fc;--white:#fff;--border:#e3eaf2;--shadow:0 10px 35px rgba(0,31,63,.08);--radius:18px}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
-body{font-family:Inter,sans-serif;background:var(--light);color:var(--text);line-height:1.7}
-a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1180px,92%);margin:auto}
-nav{position:sticky;top:0;z-index:1000;background:rgba(7,24,39,.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
-.nav-container{min-height:70px;display:flex;align-items:center;justify-content:space-between}.brand{color:#fff;font-size:1.15rem;font-weight:800}.brand span{color:var(--secondary)}
-.nav-links{display:flex;gap:25px;list-style:none}.nav-links a{color:#dce7f4;font-size:.9rem;font-weight:500;transition:.3s}.nav-links a:hover{color:var(--secondary)}
-.menu-btn{display:none;color:#fff;font-size:1.5rem;cursor:pointer}
-.hero{min-height:680px;display:flex;align-items:center;color:#fff;background:linear-gradient(115deg,rgba(4,25,43,.97),rgba(7,67,119,.88)),url("assets/hero.jpg");background-size:cover;background-position:center}
-.hero-grid{display:grid;grid-template-columns:1.5fr .8fr;gap:60px;align-items:center}.hero-badge{display:inline-block;padding:7px 14px;margin-bottom:18px;border:1px solid rgba(255,255,255,.2);border-radius:30px;background:rgba(255,255,255,.08);font-size:.85rem}
-.hero h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.1;margin-bottom:20px}.hero h1 span{color:var(--secondary)}.hero-subtitle{font-size:1.25rem;color:#dce8f5;margin-bottom:15px}.hero-description{max-width:720px;color:#b9cce0;margin-bottom:30px}
-.hero-buttons{display:flex;gap:14px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:10px;font-weight:600;transition:.3s}
-.btn-primary{background:var(--secondary);color:#fff}.btn-primary:hover{transform:translateY(-2px);background:#008dca}.btn-outline{border:1px solid rgba(255,255,255,.3);color:#fff}.btn-outline:hover{background:#fff;color:var(--dark)}
-.hero-profile{text-align:center}.profile-wrapper{width:260px;height:260px;margin:auto;padding:7px;border-radius:50%;background:linear-gradient(135deg,var(--secondary),#fff)}
-.profile-wrapper img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:6px solid var(--dark)}
-.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{text-align:center;padding:12px 5px;background:rgba(255,255,255,.07);border-radius:10px}.stat strong{display:block;color:#fff;font-size:1.3rem}.stat span{color:#a9bdd2;font-size:.72rem}
-section{padding:90px 0}.section-header{text-align:center;margin-bottom:50px}.section-label{color:var(--primary);font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:2px}.section-header h2{color:var(--dark);font-size:2.2rem;margin-top:7px}.section-header p{max-width:700px;margin:10px auto;color:var(--muted)}
-.card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
-.about-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:35px}.about-text p{margin-bottom:15px}.highlight-box{padding:22px;border-left:4px solid var(--secondary);background:#f0f8fc;border-radius:10px;margin-top:20px}
-.about-facts{display:grid;gap:15px}.fact{display:flex;gap:14px;align-items:flex-start}.fact i{color:var(--primary);font-size:1.2rem;margin-top:4px}.fact strong{display:block;color:var(--dark)}.fact span{color:var(--muted);font-size:.9rem}
-.timeline{position:relative;max-width:1000px;margin:auto}.timeline:before{content:"";position:absolute;left:18px;top:0;bottom:0;width:2px;background:var(--border)}
-.timeline-item{position:relative;padding-left:60px;margin-bottom:45px}.timeline-dot{position:absolute;left:8px;top:5px;width:22px;height:22px;background:var(--secondary);border:5px solid var(--light);border-radius:50%}
-.timeline-date{display:inline-block;color:var(--primary);font-size:.8rem;font-weight:700;margin-bottom:5px}.timeline h3{color:var(--dark);font-size:1.4rem}.timeline-role{color:var(--primary);font-weight:600;margin-bottom:15px}.timeline ul{padding-left:20px}.timeline li{margin-bottom:8px}
-.project-category{margin-bottom:60px}.project-category-title{display:flex;align-items:center;gap:12px;margin-bottom:25px}.project-category-title i{color:var(--secondary)}.project-category-title h3{color:var(--dark);font-size:1.5rem}
-.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.project-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.3s}.project-card:hover{transform:translateY(-6px)}
-.project-image{height:190px;position:relative;background:linear-gradient(135deg,#0b5cab,#071827);overflow:hidden}.project-image img{width:100%;height:100%;object-fit:cover}.project-placeholder{height:100%;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:3rem}
-.project-body{padding:22px}.project-body h4{color:var(--dark);font-size:1.15rem;margin-bottom:5px}.project-location{color:var(--primary);font-size:.8rem;font-weight:600;margin-bottom:12px}.project-body p{color:var(--muted);font-size:.9rem;margin-bottom:15px}
-.tags{display:flex;gap:7px;flex-wrap:wrap}.tag{background:#edf5fb;color:var(--primary);padding:5px 9px;border-radius:5px;font-size:.7rem;font-weight:600}
-.project-links{margin-top:18px;display:flex;gap:10px}.project-btn{border:1px solid var(--border);padding:8px 12px;border-radius:7px;font-size:.78rem;font-weight:600;cursor:pointer;background:#fff}.project-btn:hover{background:var(--primary);color:#fff}
-.skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.skill-card{background:#fff;padding:25px;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow)}.skill-card i{color:var(--primary);font-size:1.7rem;margin-bottom:12px}.skill-card h3{color:var(--dark);margin-bottom:10px}.skill-card p{color:var(--muted);font-size:.9rem}
-.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px}.cert-card{display:flex;align-items:center;gap:20px;background:#fff;padding:25px;border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow)}.cert-icon{width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:#eef7fc;color:var(--primary);border-radius:12px;font-size:1.6rem}.cert-card h3{color:var(--dark);font-size:1rem}.cert-card p{color:var(--muted);font-size:.8rem}
-.gallery-note{text-align:center;padding:30px;background:#fff;border:2px dashed var(--border);border-radius:var(--radius);margin-bottom:25px}.gallery-note i{color:var(--secondary);font-size:2rem;margin-bottom:10px}.gallery-note p{color:var(--muted)}
-.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.gallery-item{height:190px;overflow:hidden;border-radius:12px;background:#dfe8f0;position:relative}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery-item:hover img{transform:scale(1.07)}.gallery-caption{position:absolute;bottom:0;left:0;right:0;padding:12px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:.8rem;font-weight:600}
-.contact-section{background:var(--dark);color:#fff}.contact-section .section-header h2{color:#fff}.contact-section .section-header p{color:#9fb2c6}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.contact-card{text-align:center;padding:30px;border:1px solid rgba(255,255,255,.1);border-radius:15px;background:rgba(255,255,255,.04)}.contact-card i{color:var(--secondary);font-size:1.6rem;margin-bottom:12px}.contact-card h3{font-size:1rem;margin-bottom:5px}.contact-card p,.contact-card a{color:#aebfd0;font-size:.85rem}
-footer{padding:25px;text-align:center;background:#04101b;color:#71869b;font-size:.8rem}
-.modal{display:none;position:fixed;inset:0;z-index:2000;background:rgba(0,0,0,.85);align-items:center;justify-content:center;padding:20px}.modal.active{display:flex}.modal-content{width:min(900px,100%);background:#000;border-radius:12px;overflow:hidden;position:relative}.modal video{width:100%;display:block}.modal-close{position:absolute;top:10px;right:15px;z-index:5;color:#fff;font-size:1.8rem;cursor:pointer}
-@media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.hero-profile{order:-1}.projects-grid,.skills-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.menu-btn{display:block}.nav-links{display:none;position:absolute;top:70px;left:0;right:0;padding:20px;background:var(--dark);flex-direction:column}.nav-links.active{display:flex}.hero{min-height:auto;padding:80px 0}.profile-wrapper{width:190px;height:190px}.projects-grid,.skills-grid,.cert-grid,.contact-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:1fr 1fr}section{padding:65px 0}.section-header h2{font-size:1.8rem}.hero h1{font-size:2.5rem}}
-.video-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 30px;
-margin-top: 40px;
+
+:root{
+  --primary:#0b5cab;
+  --secondary:#00a1e0;
+  --dark:#071827;
+  --text:#25364a;
+  --muted:#6b7a90;
+  --light:#f5f8fc;
+  --white:#fff;
+  --border:#e3eaf2;
+  --shadow:0 10px 35px rgba(0,31,63,.08);
+  --radius:18px;
 }
 
-.video-item {
-position: relative;
-width: 100%;
-aspect-ratio: 16 / 9;
-overflow: hidden;
-border-radius: 12px;
-background: #000;
-box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.video-item iframe {
-width: 100%;
-height: 100%;
-border: 0;
+html{
+  scroll-behavior:smooth;
 }
 
-.youtube-button {
-text-align: center;
-margin-top: 35px;
+body{
+  font-family:Inter,sans-serif;
+  background:var(--light);
+  color:var(--text);
+  line-height:1.7;
 }
 
-.youtube-button a {
-display: inline-block;
-padding: 12px 24px;
-border-radius: 6px;
-text-decoration: none;
-font-weight: 600;
+a{
+  color:inherit;
+  text-decoration:none;
 }
 
-@media (max-width: 768px) {
-.video-grid {
-grid-template-columns: 1fr;
-}
+img{
+  max-width:100%;
+  display:block;
 }
 
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(7,24,39,.97);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav-container{
+  min-height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand{
+  color:#fff;
+  font-size:1.15rem;
+  font-weight:800;
+}
+
+.brand span{
+  color:var(--secondary);
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+.nav-links a{
+  color:#dce7f4;
+  font-size:.9rem;
+  font-weight:500;
+  transition:.3s;
+}
+
+.nav-links a:hover{
+  color:var(--secondary);
+}
+
+.menu-btn{
+  display:none;
+  color:#fff;
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+
+  background:
+    linear-gradient(
+      115deg,
+      rgba(4,25,43,.97),
+      rgba(7,67,119,.88)
+    ),
+    url("assets/hero.jpg");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.5fr .8fr;
+  gap:60px;
+  align-items:center;
+}
+
+.hero-badge{
+  display:inline-block;
+  padding:7px 14px;
+  margin-bottom:18px;
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:30px;
+  background:rgba(255,255,255,.08);
+  font-size:.85rem;
+}
+
+.hero h1{
+  font-size:clamp(2.4rem,5vw,4.4rem);
+  line-height:1.1;
+  margin-bottom:20px;
+}
+
+.hero h1 span{
+  color:var(--secondary);
+}
+
+.hero-subtitle{
+  font-size:1.25rem;
+  color:#dce8f5;
+  margin-bottom:15px;
+}
+
+.hero-description{
+  max-width:720px;
+  color:#b9cce0;
+  margin-bottom:30px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:13px 22px;
+  border-radius:10px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn-primary{
+  background:var(--secondary);
+  color:#fff;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  background:#008dca;
+}
+
+.btn-outline{
+  border:1px solid rgba(255,255,255,.3);
+  color:#fff;
+}
+
+.btn-outline:hover{
+  background:#fff;
+  color:var(--dark);
+}
+
+.hero-profile{
+  text-align:center;
+}
+
+.profile-wrapper{
+  width:260px;
+  height:260px;
+  margin:auto;
+  padding:7px;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--secondary),#fff);
+}
+
+.profile-wrapper img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:50%;
+  border:6px solid var(--dark);
+}
+
+.hero-stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin-top:25px;
+}
+
+.stat{
+  text-align:center;
+  padding:12px 5px;
+  background:rgba(255,255,255,.07);
+  border-radius:10px;
+}
+
+.stat strong{
+  display:block;
+  color:#fff;
+  font-size:1.3rem;
+}
+
+.stat span{
+  color:#a9bdd2;
+  font-size:.72rem;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+  padding:90px 0;
+}
+
+.section-header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-label{
+  color:var(--primary);
+  font-size:.8rem;
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.section-header h2{
+  color:var(--dark);
+  font-size:2.2rem;
+  margin-top:7px;
+}
+
+.section-header p{
+  max-width:700px;
+  margin:10px auto;
+  color:var(--muted);
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:30px;
+  box-shadow:var(--shadow);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:35px;
+}
+
+.about-text p{
+  margin-bottom:15px;
+}
+
+.highlight-box{
+  padding:22px;
+  border-left:4px solid var(--secondary);
+  background:#f0f8fc;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.about-facts{
+  display:grid;
+  gap:15px;
+}
+
+.fact{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+
+.fact i{
+  color:var(--primary);
+  font-size:1.2rem;
+  margin-top:4px;
+}
+
+.fact strong{
+  display:block;
+  color:var(--dark);
+}
+
+.fact span{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.timeline{
+  position:relative;
+  max-width:1000px;
+  margin:auto;
+}
+
+.timeline:before{
+  content:"";
+  position:absolute;
+  left:18px;
+  top:0;
+  bottom:0;
+  width:2px;
+  background:var(--border);
+}
+
+.timeline-item{
+  position:relative;
+  padding-left:60px;
+  margin-bottom:45px;
+}
+
+.timeline-dot{
+  position:absolute;
+  left:8px;
+  top:5px;
+  width:22px;
+  height:22px;
+  background:var(--secondary);
+  border:5px solid var(--light);
+  border-radius:50%;
+}
+
+.timeline-date{
+  display:inline-block;
+  color:var(--primary);
+  font-size:.8rem;
+  font-weight:700;
+  margin-bottom:5px;
+}
+
+.timeline h3{
+  color:var(--dark);
+  font-size:1.4rem;
+}
+
+.timeline-role{
+  color:var(--primary);
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+.timeline ul{
+  padding-left:20px;
+}
+
+.timeline li{
+  margin-bottom:8px;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-category{
+  margin-bottom:60px;
+}
+
+.project-category-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:25px;
+}
+
+.project-category-title i{
+  color:var(--secondary);
+}
+
+.project-category-title h3{
+  color:var(--dark);
+  font-size:1.5rem;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.project-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  transition:.3s;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+}
+
+.project-image{
+  height:190px;
+  position:relative;
+  background:linear-gradient(135deg,#0b5cab,#071827);
+  overflow:hidden;
+}
+
+.project-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.project-placeholder{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:rgba(255,255,255,.8);
+  font-size:3rem;
+}
+
+.project-body{
+  padding:22px;
+}
+
+.project-body h4{
+  color:var(--dark);
+  font-size:1.15rem;
+  margin-bottom:5px;
+}
+
+.project-location{
+  color:var(--primary);
+  font-size:.8rem;
+  font-weight:600;
+  margin-bottom:12px;
+}
+
+.project-body p{
+  color:var(--muted);
+  font-size:.9rem;
+  margin-bottom:15px;
+}
+
+.tags{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+}
+
+.tag{
+  background:#edf5fb;
+  color:var(--primary);
+  padding:5px 9px;
+  border-radius:5px;
+  font-size:.7rem;
+  font-weight:600;
+}
+
+.project-links{
+  margin-top:18px;
+  display:flex;
+  gap:10px;
+}
+
+.project-btn{
+  border:1px solid var(--border);
+  padding:8px 12px;
+  border-radius:7px;
+  font-size:.78rem;
+  font-weight:600;
+  cursor:pointer;
+  background:#fff;
+}
+
+.project-btn:hover{
+  background:var(--primary);
+  color:#fff;
+}
+
+/* =========================
+   VIDEO PORTFOLIO
+========================= */
+
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:30px;
+  margin-top:40px;
+}
+
+.video-item{
+  position:relative;
+  width:100%;
+  aspect-ratio:16 / 9;
+  overflow:hidden;
+  border-radius:12px;
+  background:#000;
+  box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.video-item iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.youtube-button{
+  text-align:center;
+  margin-top:35px;
+}
+
+.youtube-button a{
+  display:inline-block;
+  padding:12px 24px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:600;
+  background:var(--primary);
+  color:#fff;
+}
+
+.youtube-button a:hover{
+  background:var(--secondary);
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.skill-card{
+  background:#fff;
+  padding:25px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+
+.skill-card i{
+  color:var(--primary);
+  font-size:1.7rem;
+  margin-bottom:12px;
+}
+
+.skill-card h3{
+  color:var(--dark);
+  margin-bottom:10px;
+}
+
+.skill-card p{
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+}
+
+.cert-card{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  background:#fff;
+  padding:25px;
+  border-radius:var(--radius);
+  border:1px solid var(--border);
+  box-shadow:var(--shadow);
+}
+
+.cert-icon{
+  width:60px;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#eef7fc;
+  color:var(--primary);
+  border-radius:12px;
+  font-size:1.6rem;
+}
+
+.cert-card h3{
+  color:var(--dark);
+  font-size:1rem;
+}
+
+.cert-card p{
+  color:var(--muted);
+  font-size:.8rem;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-note{
+  text-align:center;
+  padding:30px;
+  background:#fff;
+  border:2px dashed var(--border);
+  border-radius:var(--radius);
+  margin-bottom:25px;
+}
+
+.gallery-note i{
+  color:var(--secondary);
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.gallery-note p{
+  color:var(--muted);
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.gallery-item{
+  height:190px;
+  overflow:hidden;
+  border-radius:12px;
+  background:#dfe8f0;
+  position:relative;
+}
+
+.gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.gallery-item:hover img{
+  transform:scale(1.07);
+}
+
+.gallery-caption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:12px;
+  color:#fff;
+  background:linear-gradient(transparent,rgba(0,0,0,.8));
+  font-size:.8rem;
+  font-weight:600;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section{
+  background:var(--dark);
+  color:#fff;
+}
+
+.contact-section .section-header h2{
+  color:#fff;
+}
+
+.contact-section .section-header p{
+  color:#9fb2c6;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  text-align:center;
+  padding:30px;
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:15px;
+  background:rgba(255,255,255,.04);
+}
+
+.contact-card i{
+  color:var(--secondary);
+  font-size:1.6rem;
+  margin-bottom:12px;
+}
+
+.contact-card h3{
+  font-size:1rem;
+  margin-bottom:5px;
+}
+
+.contact-card p,
+.contact-card a{
+  color:#aebfd0;
+  font-size:.85rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  padding:25px;
+  text-align:center;
+  background:#04101b;
+  color:#71869b;
+  font-size:.8rem;
+}
+
+/* =========================
+   VIDEO MODAL
+========================= */
+
+.modal{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:2000;
+  background:rgba(0,0,0,.85);
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.modal.active{
+  display:flex;
+}
+
+.modal-content{
+  width:min(900px,100%);
+  background:#000;
+  border-radius:12px;
+  overflow:hidden;
+  position:relative;
+}
+
+.modal video{
+  width:100%;
+  display:block;
+}
+
+.modal-close{
+  position:absolute;
+  top:10px;
+  right:15px;
+  z-index:5;
+  color:#fff;
+  font-size:1.8rem;
+  cursor:pointer;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+  .hero-grid,
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero-profile{
+    order:-1;
+  }
+
+  .projects-grid,
+  .skills-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:700px){
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav-links{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    padding:20px;
+    background:var(--dark);
+    flex-direction:column;
+  }
+
+  .nav-links.active{
+    display:flex;
+  }
+
+  .hero{
+    min-height:auto;
+    padding:80px 0;
+  }
+
+  .profile-wrapper{
+    width:190px;
+    height:190px;
+  }
+
+  .projects-grid,
+  .skills-grid,
+  .cert-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .video-grid{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:65px 0;
+  }
+
+  .section-header h2{
+    font-size:1.8rem;
+  }
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+}
 
 </style>
 </head>
 
 <body>
 
+<!-- =========================
+     NAVIGATION
+========================= -->
+
 <nav>
+
   <div class="container nav-container">
-    <a href="#home" class="brand">Pruthvi<span>.</span></a>
-    <div class="menu-btn" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+
+    <a href="#home" class="brand">
+      Pruthvi<span>.</span>
+    </a>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
     <ul class="nav-links" id="navLinks">
+
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#salesforce-videos">Videos</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
+
     </ul>
+
   </div>
+
 </nav>
 
+
+<!-- =========================
+     HERO
+========================= -->
+
 <header class="hero" id="home">
+
   <div class="container hero-grid">
+
     <div>
-      <span class="hero-badge">Salesforce • CRM • Engineering • Project Execution</span>
-      <h1>Pruthvi Kumar<br><span>Dibba</span></h1>
-      <p class="hero-subtitle">Salesforce Admin & Developer | Zoho | Techniacal Sales Operations | Project Engineer</p>
-      <p class="hero-description">
-        10+ years of professional experience combining Salesforce development,
-        CRM automation, technical sales, procurement, project coordination
-        and GCC engineering project execution.
+
+      <span class="hero-badge">
+        HVAC • Industrial Refrigeration • Technical Sales • Salesforce
+      </span>
+
+      <h1>
+        Pruthvi Kumar<br>
+        <span>Dibba</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Senior HVAC Project Engineer & Sales Engineer |
+        Salesforce Administrator & Developer
       </p>
+
+      <p class="hero-description">
+        11+ years of professional experience combining HVAC and industrial
+        refrigeration project execution, technical sales, business operations
+        and Salesforce CRM technology across the UAE and GCC.
+      </p>
+
       <div class="hero-buttons">
-        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View My Projects</a>
-        <a href="assets/Pruthvi_Kumar_Dibba_Resume.pdf" class="btn btn-outline" target="_blank"><i class="fa-solid fa-file-pdf"></i> View Resume</a>
+
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-diagram-project"></i>
+          View My Projects
+        </a>
+
+        <a
+          href="assets/Pruthvi_Kumar_Dibba_Resume.pdf"
+          class="btn btn-outline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-file-pdf"></i>
+          View Resume
+        </a>
+
       </div>
+
     </div>
+
 
     <div class="hero-profile">
+
       <div class="profile-wrapper">
-        <img src="assets/profile.jpg" alt="Pruthvi Kumar Dibba">
+
+        <img
+          src="assets/profile.jpg"
+          alt="Pruthvi Kumar Dibba"
+        >
+
       </div>
+
       <div class="hero-stats">
-        <div class="stat"><strong>10+</strong><span>Years Experience</span></div>
-        <div class="stat"><strong>4+</strong><span>Years Salesforce</span></div>
-        <div class="stat"><strong>GCC</strong><span>Project Experience</span></div>
+
+        <div class="stat">
+          <strong>11+</strong>
+          <span>Years Experience</span>
+        </div>
+
+        <div class="stat">
+          <strong>7+</strong>
+          <span>Years Project Experience</span>
+        </div>
+
+        <div class="stat">
+          <strong>4+</strong>
+          <span>Years Salesforce</span>
+        </div>
+
       </div>
+
     </div>
+
   </div>
+
 </header>
 
+
+<!-- =========================
+     ABOUT
+========================= -->
+
 <section id="about">
+
   <div class="container">
+
     <div class="section-header">
-      <span class="section-label">About Me</span>
-      <h2>Technology Meets Engineering</h2>
-      <p>A unique combination of Salesforce, business operations and engineering project experience.</p>
+
+      <span class="section-label">
+        About Me
+      </span>
+
+      <h2>
+        Engineering, Sales & Technology
+      </h2>
+
+      <p>
+        A unique combination of HVAC project execution,
+        technical sales, business operations and Salesforce CRM expertise.
+      </p>
+
     </div>
+
 
     <div class="about-grid">
-  <div class="card about-text">
-    <p>
-      I am a <strong>Senior HVAC Project Engineer & Sales Engineer</strong>
-      with <strong>11+ years of overall professional experience</strong>,
-      including <strong>7+ years of hands-on experience</strong> in HVAC,
-      industrial refrigeration, MEP projects and site execution.
-    </p>
 
-    <p>
-      My engineering and project experience includes
-      <strong>industrial refrigeration, ammonia and Freon systems, cold storage,
-      HVAC, chilled water systems, AHUs, piping, steam boilers and mechanical
-      systems</strong>. I have worked on projects across the
-      <strong>UAE, Qatar, Bahrain and Djibouti</strong>.
-    </p>
+      <div class="card about-text">
 
-    <p>
-      I also have <strong>4+ years of hands-on Salesforce experience</strong>
-      as a Salesforce Administrator and Developer, with expertise in
-      <strong>Sales Cloud, Service Cloud, Salesforce CPQ, Loyalty Management,
-      automation, Apex, SOQL/SOSL, integrations, reporting and data
-      management</strong>.
-    </p>
+        <p>
+          I am a
+          <strong>Senior HVAC Project Engineer & Sales Engineer</strong>
+          with <strong>11+ years of overall professional experience</strong>,
+          including <strong>7+ years of hands-on experience</strong>
+          in HVAC, industrial refrigeration, MEP projects and site execution.
+        </p>
 
-    <div class="highlight-box">
-      <strong>
-        My key strength is combining engineering, technical sales and
-        business technology.
-      </strong>
-      <p>
-        This allows me to understand customer requirements, technical
-        challenges and business processes while connecting customers,
-        suppliers, project teams, sales teams and CRM technology.
-      </p>
-    </div>
-  </div>
-</div>
+        <p>
+          My engineering and project experience includes
+          <strong>
+            industrial refrigeration, ammonia and Freon systems,
+            cold storage, HVAC, chilled water systems, AHUs,
+            piping, steam boilers and mechanical systems
+          </strong>.
+          I have worked on projects across the
+          <strong>UAE, Qatar, Bahrain and Djibouti</strong>.
+        </p>
+
+        <p>
+          I also have
+          <strong>4+ years of hands-on Salesforce experience</strong>
+          as a Salesforce Administrator and Developer, with expertise in
+          <strong>
+            Sales Cloud, Service Cloud, Salesforce CPQ,
+            Loyalty Management, automation, Apex, SOQL/SOSL,
+            integrations, reporting and data management
+          </strong>.
+        </p>
+
+        <div class="highlight-box">
+
+          <strong>
+            My key strength is combining engineering,
+            technical sales and business technology.
+          </strong>
+
+          <p>
+            This allows me to understand customer requirements,
+            technical challenges and business processes while connecting
+            customers, suppliers, project teams, sales teams and
+            CRM technology.
+          </p>
+
+        </div>
+
+      </div>
+
 
       <div class="card">
+
         <div class="about-facts">
-          <div class="fact"><i class="fa-solid fa-cloud"></i><div><strong>Salesforce</strong><span>Administration & Development</span></div></div>
-          <div class="fact"><i class="fa-solid fa-code"></i><div><strong>Development</strong><span>Apex, SOQL, SOSL, Visualforce</span></div></div>
-          <div class="fact"><i class="fa-solid fa-gears"></i><div><strong>Automation</strong><span>Flows, Approvals, Validation Rules</span></div></div>
-          <div class="fact"><i class="fa-solid fa-network-wired"></i><div><strong>Integration</strong><span>APIs, CDC, Platform Events</span></div></div>
-          <div class="fact"><i class="fa-solid fa-industry"></i><div><strong>Engineering</strong><span>Refrigeration, HVAC & Piping</span></div></div>
-          <div class="fact"><i class="fa-solid fa-briefcase"></i><div><strong>Business Operations</strong><span>Sales, Procurement & Project Coordination</span></div></div>
+
+          <div class="fact">
+
+            <i class="fa-solid fa-cloud"></i>
+
+            <div>
+              <strong>Salesforce</strong>
+              <span>Administration & Development</span>
+            </div>
+
+          </div>
+
+
+          <div class="fact">
+
+            <i class="fa-solid fa-code"></i>
+
+            <div>
+              <strong>Development</strong>
+              <span>Apex, SOQL, SOSL, Visualforce</span>
+            </div>
+
+          </div>
+
+
+          <div class="fact">
+
+            <i class="fa-solid fa-gears"></i>
+
+            <div>
+              <strong>Automation</strong>
+              <span>Flows, Approvals, Validation Rules</span>
+            </div>
+
+          </div>
+
+
+          <div class="fact">
+
+            <i class="fa-solid fa-network-wired"></i>
+
+            <div>
+              <strong>Integration</strong>
+              <span>APIs, CDC, Platform Events</span>
+            </div>
+
+          </div>
+
+
+          <div class="fact">
+
+            <i class="fa-solid fa-industry"></i>
+
+            <div>
+              <strong>Engineering</strong>
+              <span>Refrigeration, HVAC, Steam & Piping</span>
+            </div>
+
+          </div>
+
+
+          <div class="fact">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            <div>
+              <strong>Technical Sales</strong>
+              <span>Sales, Procurement & Project Coordination</span>
+            </div>
+
+          </div>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- =========================
+     EXPERIENCE
+========================= -->
+
 <section id="experience">
+
   <div class="container">
+
     <div class="section-header">
-      <span class="section-label">Career</span>
-      <h2>Professional Experience</h2>
-      <p>From GCC engineering projects to Salesforce and CRM solutions.</p>
+
+      <span class="section-label">
+        Career
+      </span>
+
+      <h2>
+        Professional Experience
+      </h2>
+
+      <p>
+        Combining HVAC and refrigeration project execution,
+        technical sales, CRM technology and business operations.
+      </p>
+
     </div>
+
 
     <div class="timeline">
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <span class="timeline-date">OCT 2025 – PRESENT</span>
-        <h3>VishTek Group – UAE</h3>
-        <div class="timeline-role">Salesforce Administrator | CRM & Sales Operations</div>
-        <ul>
-          <li>Configured Zoho Mail for domain verification, SPF/DKIM/DMARC setup, and mailbox/alias creation.</li>
-          <li>Implemented Zoho CRM with custom modules, automated rules, and integrated web forms.</li>
-          <li>Designed a responsive website using HTML5, CSS3, JavaScript — <a href="https://www.vishtekgroup.com" target="_blank">www.vishtekgroup.com</a></li>
-          <li>Used GitHub for version control and DNS configuration.</li>
-          <li>Delivered training and post-deployment support.</li>
-          
-          <li>Developed and implemented Salesforce CRM for clients, suppliers, products, quotations, orders and invoicing processes.</li>
-          <li>Created custom objects, fields, relationships, Lightning Record Pages and security controls.</li>
-          <li>Developed Salesforce Flows and automation for lead assignment, approvals, quotation workflows and follow-up notifications.</li>
-          <li>Developed quotation and invoice PDF generation using Apex and Visualforce.</li>
-          <li>Coordinated customer inquiries, technical clarifications, quotations, purchase orders, suppliers and procurement activities.</li>
-          <li>Managed Zoho CRM, Zoho Mail, DNS, SPF/DKIM/DMARC and company website technology.</li>
-        </ul>
-      </div>
+
+      <!-- ARBON -->
 
       <div class="timeline-item">
+
         <div class="timeline-dot"></div>
-        <span class="timeline-date">JAN 2022 – SEP 2025</span>
-        <h3>Qualex Consulting Pvt Ltd – Hyderabad</h3>
-        <div class="timeline-role">Salesforce Administrator / Developer</div>
+
+        <span class="timeline-date">
+          SEP 2026 – PRESENT
+        </span>
+
+        <h3>
+          Arbon Group – UAE
+        </h3>
+
+        <div class="timeline-role">
+          Senior HVAC Project Engineer cum Sales Engineer
+        </div>
+
         <ul>
-          <li>Salesforce administration, configuration, automation, security and data management.</li>
-          <li>Developed Apex Classes, Triggers, Visualforce, SOQL/SOSL and Salesforce Flows.</li>
-          <li>Worked on Salesforce Loyalty Management, CPQ, integrations and business automation.</li>
-          <li>Implemented Connected Apps, APIs, Change Data Capture and Platform Events.</li>
-          <li>Worked on Salesforce–NetSuite integration and real-time financial data synchronization.</li>
+
+          <li>
+            Supporting HVAC, industrial refrigeration, energy optimization,
+            automation and related engineering solutions.
+          </li>
+
+          <li>
+            Handling technical sales activities including customer inquiries,
+            requirement analysis, solution selection, quotations and
+            commercial coordination.
+          </li>
+
+          <li>
+            Developing new business opportunities across industrial,
+            commercial, cold-storage, food & beverage, pharmaceutical
+            and temperature-controlled facilities.
+          </li>
+
+          <li>
+            Building and maintaining relationships with consultants,
+            contractors, facility owners, project teams and industrial clients.
+          </li>
+
+          <li>
+            Supporting project teams with technical understanding of HVAC,
+            refrigeration, piping and mechanical systems.
+          </li>
+
+          <li>
+            Coordinating with suppliers and internal teams regarding
+            technical specifications, availability, lead times and
+            delivery requirements.
+          </li>
+
+          <li>
+            Supporting customer follow-ups, site visits, proposals
+            and project-to-sales coordination.
+          </li>
+
         </ul>
+
       </div>
 
+
+      <!-- VISHTEK -->
+
       <div class="timeline-item">
+
         <div class="timeline-dot"></div>
-        <span class="timeline-date">APR 2015 – JUN 2021</span>
-        <h3>Fanar Al Khaleej Refrigeration Company – UAE</h3>
-        <div class="timeline-role">Refrigeration Project Engineer</div>
+
+        <span class="timeline-date">
+          OCT 2025 – SEP 2026
+        </span>
+
+        <h3>
+          VishTek Group – UAE
+        </h3>
+
+        <div class="timeline-role">
+          Salesforce Administrator | CRM & Sales Operations
+        </div>
+
         <ul>
-          <li>Managed installation, commissioning and project execution of industrial refrigeration systems.</li>
-          <li>Worked with ammonia and Freon refrigeration systems, cold storage and HVAC chilled-water systems.</li>
-          <li>Coordinated clients, consultants, subcontractors, suppliers and site teams.</li>
-          <li>Managed material requirements, procurement follow-up, delivery schedules and site activities.</li>
-          <li>Supported testing, commissioning, troubleshooting and project handover.</li>
+
+          <li>
+            Configured Zoho Mail for domain verification,
+            SPF/DKIM/DMARC setup and mailbox/alias creation.
+          </li>
+
+          <li>
+            Implemented Zoho CRM with custom modules,
+            automated rules and integrated web forms.
+          </li>
+
+          <li>
+            Designed a responsive website using HTML5, CSS3 and JavaScript —
+            <a
+              href="https://www.vishtekgroup.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.vishtekgroup.com
+            </a>
+          </li>
+
+          <li>
+            Used GitHub for version control and DNS configuration.
+          </li>
+
+          <li>
+            Delivered training and post-deployment support.
+          </li>
+
+          <li>
+            Developed and implemented Salesforce CRM for clients,
+            suppliers, products, quotations, orders and invoicing processes.
+          </li>
+
+          <li>
+            Created custom objects, fields, relationships,
+            Lightning Record Pages and security controls.
+          </li>
+
+          <li>
+            Developed Salesforce Flows and automation for lead assignment,
+            approvals, quotation workflows and follow-up notifications.
+          </li>
+
+          <li>
+            Developed quotation and invoice PDF generation using
+            Apex and Visualforce.
+          </li>
+
+          <li>
+            Coordinated customer inquiries, technical clarifications,
+            quotations, purchase orders, suppliers and procurement activities.
+          </li>
+
+          <li>
+            Managed Zoho CRM, Zoho Mail, DNS, SPF/DKIM/DMARC
+            and company website technology.
+          </li>
+
         </ul>
+
       </div>
+
+
+      <!-- QUALEX -->
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <span class="timeline-date">
+          JAN 2022 – SEP 2025
+        </span>
+
+        <h3>
+          Qualex Consulting Pvt Ltd – Hyderabad
+        </h3>
+
+        <div class="timeline-role">
+          Salesforce Administrator / Developer
+        </div>
+
+        <ul>
+
+          <li>
+            Salesforce administration, configuration, automation,
+            security and data management.
+          </li>
+
+          <li>
+            Developed Apex Classes, Triggers, Visualforce,
+            SOQL/SOSL and Salesforce Flows.
+          </li>
+
+          <li>
+            Worked on Salesforce Loyalty Management,
+            CPQ, integrations and business automation.
+          </li>
+
+          <li>
+            Implemented Connected Apps, APIs,
+            Change Data Capture and Platform Events.
+          </li>
+
+          <li>
+            Worked on Salesforce–NetSuite integration
+            and real-time financial data synchronization.
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- FANAR -->
+
+      <div class="timeline-item">
+
+        <div class="timeline-dot"></div>
+
+        <span class="timeline-date">
+          APR 2015 – JUN 2021
+        </span>
+
+        <h3>
+          Fanar Al Khaleej Refrigeration Company – UAE
+        </h3>
+
+        <div class="timeline-role">
+          Refrigeration Project Engineer
+        </div>
+
+        <ul>
+
+          <li>
+            Managed installation, commissioning and project execution
+            of industrial refrigeration systems.
+          </li>
+
+          <li>
+            Worked with ammonia and Freon refrigeration systems,
+            cold storage and HVAC chilled-water systems.
+          </li>
+
+          <li>
+            Coordinated clients, consultants, subcontractors,
+            suppliers and site teams.
+          </li>
+
+          <li>
+            Managed material requirements, procurement follow-up,
+            delivery schedules and site activities.
+          </li>
+
+          <li>
+            Supported testing, commissioning,
+            troubleshooting and project handover.
+          </li>
+
+        </ul>
+
+      </div>
+
 
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
 
 <section id="projects">
+
   <div class="container">
+
     <div class="section-header">
-      <span class="section-label">Portfolio</span>
-      <h2>Featured Projects</h2>
-      <p>A selection of Salesforce, CRM and engineering projects handled during my career.</p>
+
+      <span class="section-label">
+        Portfolio
+      </span>
+
+      <h2>
+        Featured Projects
+      </h2>
+
+      <p>
+        A selection of Salesforce, CRM, HVAC, refrigeration
+        and engineering projects from my professional experience.
+      </p>
+
     </div>
 
+
+    <!-- SALESFORCE PROJECTS -->
+
     <div class="project-category">
-      <div class="project-category-title"><i class="fa-solid fa-cloud"></i><h3>Salesforce & CRM Projects</h3></div>
+
+      <div class="project-category-title">
+
+        <i class="fa-solid fa-cloud"></i>
+
+        <h3>
+          Salesforce & CRM Projects
+        </h3>
+
+      </div>
+
 
       <div class="projects-grid">
 
-        <article class="project-card">
-          <div class="project-image">
-            <img src="assets/projects/vishtek-crm.jpg" alt="VishTek Salesforce CRM" onerror="this.style.display='none'">
-            <div class="project-placeholder"><i class="fa-solid fa-cloud"></i></div>
-          </div>
-          <div class="project-body">
-            <h4>VishTek Salesforce CRM</h4>
-            <div class="project-location">UAE</div>
-            <p>Salesforce CRM implementation covering sales, products, quotations, procurement and invoicing workflows.</p>
-            <div class="tags"><span class="tag">Salesforce</span><span class="tag">Flow</span><span class="tag">Apex</span><span class="tag">CRM</span></div>
-          </div>
-        </article>
 
         <article class="project-card">
+
           <div class="project-image">
-            <img src="assets/projects/loyalty.jpg" alt="VB Loyalty Management" onerror="this.style.display='none'">
-            <div class="project-placeholder"><i class="fa-solid fa-gift"></i></div>
+
+            <img
+              src="assets/projects/vishtek-crm.jpg"
+              alt="VishTek Salesforce CRM"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+
           </div>
+
           <div class="project-body">
-            <h4>VB Loyalty Management</h4>
-            <div class="project-location">Salesforce Loyalty Management</div>
-            <p>Loyalty, rewards, auction and point conversion processes with Salesforce automation and external integrations.</p>
-            <div class="tags"><span class="tag">Loyalty</span><span class="tag">Apex</span><span class="tag">Flows</span><span class="tag">APIs</span><span class="tag">CDC</span></div>
+
+            <h4>
+              VishTek Salesforce CRM
+            </h4>
+
+            <div class="project-location">
+              UAE
+            </div>
+
+            <p>
+              Salesforce CRM implementation covering sales,
+              products, quotations, procurement and invoicing workflows.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Salesforce</span>
+              <span class="tag">Flow</span>
+              <span class="tag">Apex</span>
+              <span class="tag">CRM</span>
+
+            </div>
+
           </div>
+
         </article>
 
+
         <article class="project-card">
+
           <div class="project-image">
-            <img src="assets/projects/hr-system.jpg" alt="HR Management System" onerror="this.style.display='none'">
-            <div class="project-placeholder"><i class="fa-solid fa-users"></i></div>
+
+            <img
+              src="assets/projects/loyalty.jpg"
+              alt="VB Loyalty Management"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+
           </div>
+
           <div class="project-body">
-            <h4>HR Management System</h4>
-            <div class="project-location">Salesforce</div>
-            <p>Custom HR management solution with automation, Visualforce document generation, Apex and management dashboards.</p>
-            <div class="tags"><span class="tag">Apex</span><span class="tag">Visualforce</span><span class="tag">Automation</span><span class="tag">Reports</span></div>
+
+            <h4>
+              VB Loyalty Management
+            </h4>
+
+            <div class="project-location">
+              Salesforce Loyalty Management
+            </div>
+
+            <p>
+              Loyalty, rewards, auction and point conversion processes
+              with Salesforce automation and external integrations.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Loyalty</span>
+              <span class="tag">Apex</span>
+              <span class="tag">Flows</span>
+              <span class="tag">APIs</span>
+              <span class="tag">CDC</span>
+
+            </div>
+
           </div>
+
         </article>
+
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/hr-system.jpg"
+              alt="HR Management System"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-users"></i>
+            </div>
+
+          </div>
+
+          <div class="project-body">
+
+            <h4>
+              HR Management System
+            </h4>
+
+            <div class="project-location">
+              Salesforce
+            </div>
+
+            <p>
+              Custom HR management solution with automation,
+              Visualforce document generation, Apex and dashboards.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Apex</span>
+              <span class="tag">Visualforce</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Reports</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
 
       </div>
+
     </div>
 
+
+    <!-- ENGINEERING PROJECTS -->
+
     <div class="project-category">
-      <div class="project-category-title"><i class="fa-solid fa-industry"></i><h3>Engineering Projects</h3></div>
+
+      <div class="project-category-title">
+
+        <i class="fa-solid fa-industry"></i>
+
+        <h3>
+          Engineering Projects
+        </h3>
+
+      </div>
+
 
       <div class="projects-grid">
 
-        <article class="project-card">
-          <div class="project-image"><img src="assets/projects/noon.jpg" alt="Noon Logistics" onerror="this.style.display='none'"><div class="project-placeholder"><i class="fa-solid fa-snowflake"></i></div></div>
-          <div class="project-body">
-            <h4>Noon Logistics</h4><div class="project-location">UAE</div>
-            <p>Freon refrigeration plant installation and cold-storage facility execution.</p>
-            <div class="tags"><span class="tag">Refrigeration</span><span class="tag">Freon</span><span class="tag">Cold Storage</span></div>
-            <div class="project-links"><button class="project-btn" onclick="openVideo('assets/videos/noon.mp4')"><i class="fa-solid fa-play"></i> Project Video</button></div>
-          </div>
-        </article>
+
+        <!-- NOON -->
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/nfpc.jpg" alt="NFPC Mega Plant" onerror="this.style.display='none'"><div class="project-placeholder"><i class="fa-solid fa-industry"></i></div></div>
-          <div class="project-body">
-            <h4>NFPC Mega Plant</h4><div class="project-location">KIZAD, Abu Dhabi – UAE</div>
-            <p>Ammonia refrigeration, chilled-water and steam plant piping installation.</p>
-            <div class="tags"><span class="tag">Ammonia</span><span class="tag">HVAC</span><span class="tag">Piping</span><span class="tag">Steam</span></div>
-            <div class="project-links"><button class="project-btn" onclick="openVideo('assets/videos/nfpc.mp4')"><i class="fa-solid fa-play"></i> Project Video</button></div>
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/noon.jpg"
+              alt="Noon Logistics"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+
           </div>
+
+          <div class="project-body">
+
+            <h4>
+              Noon Logistics
+            </h4>
+
+            <div class="project-location">
+              UAE
+            </div>
+
+            <p>
+              Freon refrigeration plant installation
+              and cold-storage facility execution.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Refrigeration</span>
+              <span class="tag">Freon</span>
+              <span class="tag">Cold Storage</span>
+
+            </div>
+
+            <div class="project-links">
+
+              <button
+                class="project-btn"
+                onclick="openVideo('assets/videos/noon.mp4')"
+              >
+                <i class="fa-solid fa-play"></i>
+                Project Video
+              </button>
+
+            </div>
+
+          </div>
+
         </article>
 
-        <article class="project-card">
-          <div class="project-image"><img src="assets/projects/33k.jpg" alt="33K Warehouse Qatar" onerror="this.style.display='none'"><div class="project-placeholder"><i class="fa-solid fa-building"></i></div></div>
-          <div class="project-body">
-            <h4>33K Warehouse HVAC</h4><div class="project-location">Qatar</div>
-            <p>Chilled-water HVAC system installation for warehouse facilities.</p>
-            <div class="tags"><span class="tag">HVAC</span><span class="tag">Chilled Water</span><span class="tag">Warehouse</span></div>
-          </div>
-        </article>
+
+        <!-- NFPC -->
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/bahrain.jpg" alt="Warehousing World Bahrain" onerror="this.style.display='none'"><div class="project-placeholder"><i class="fa-solid fa-snowflake"></i></div></div>
-          <div class="project-body">
-            <h4>Warehousing World</h4><div class="project-location">Bahrain</div>
-            <p>Freon refrigeration, cold storage and floor heating system installation.</p>
-            <div class="tags"><span class="tag">Freon</span><span class="tag">Cold Storage</span><span class="tag">Heating</span></div>
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/nfpc.jpg"
+              alt="NFPC Mega Plant"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-industry"></i>
+            </div>
+
           </div>
+
+          <div class="project-body">
+
+            <h4>
+              NFPC Mega Plant
+            </h4>
+
+            <div class="project-location">
+              KIZAD, Abu Dhabi – UAE
+            </div>
+
+            <p>
+              Ammonia refrigeration, chilled-water and
+              steam plant piping installation.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Ammonia</span>
+              <span class="tag">HVAC</span>
+              <span class="tag">Piping</span>
+              <span class="tag">Steam</span>
+
+            </div>
+
+            <div class="project-links">
+
+              <button
+                class="project-btn"
+                onclick="openVideo('assets/videos/nfpc.mp4')"
+              >
+                <i class="fa-solid fa-play"></i>
+                Project Video
+              </button>
+
+            </div>
+
+          </div>
+
         </article>
 
-        <article class="project-card">
-          <div class="project-image"><img src="assets/projects/djibouti.jpg" alt="Djibha Food Processing" onerror="this.style.display='none'"><div class="project-placeholder"><i class="fa-solid fa-temperature-low"></i></div></div>
-          <div class="project-body">
-            <h4>Djibha Food Processing</h4><div class="project-location">Djibouti, Africa</div>
-            <p>Freon-based refrigeration and cold-storage installation for food-processing facilities.</p>
-            <div class="tags"><span class="tag">Refrigeration</span><span class="tag">Freon</span><span class="tag">Food Processing</span></div>
-          </div>
-        </article>
+
+        <!-- QATAR 33K -->
 
         <article class="project-card">
-          <div class="project-image"><img src="assets/projects/busulba.jpg" alt="Bu Sulba Warehousing Qatar" onerror="this.style.display='none'"><div class="project-placeholder"><i class="fa-solid fa-warehouse"></i></div></div>
-          <div class="project-body">
-            <h4>Bu Sulba Warehousing Park</h4><div class="project-location">Qatar</div>
-            <p>Large-scale Freon refrigeration and cold-chain infrastructure.</p>
-            <div class="tags"><span class="tag">Refrigeration</span><span class="tag">Cold Chain</span><span class="tag">Freon</span></div>
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/33k.jpg"
+              alt="33K Warehouse Qatar"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-building"></i>
+            </div>
+
           </div>
+
+          <div class="project-body">
+
+            <h4>
+              33K Warehouse HVAC
+            </h4>
+
+            <div class="project-location">
+              Qatar
+            </div>
+
+            <p>
+              Chilled-water HVAC system installation
+              for warehouse facilities.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">HVAC</span>
+              <span class="tag">Chilled Water</span>
+              <span class="tag">Warehouse</span>
+
+            </div>
+
+          </div>
+
         </article>
+
+
+        <!-- BAHRAIN -->
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/bahrain.jpg"
+              alt="Warehousing World Bahrain"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+
+          </div>
+
+          <div class="project-body">
+
+            <h4>
+              Warehousing World
+            </h4>
+
+            <div class="project-location">
+              Bahrain
+            </div>
+
+            <p>
+              Freon refrigeration, cold storage and
+              floor heating system installation.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Freon</span>
+              <span class="tag">Cold Storage</span>
+              <span class="tag">Heating</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- DJIBOUTI -->
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/djibouti.jpg"
+              alt="Djibha Food Processing"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-temperature-low"></i>
+            </div>
+
+          </div>
+
+          <div class="project-body">
+
+            <h4>
+              Djibha Food Processing
+            </h4>
+
+            <div class="project-location">
+              Djibouti, Africa
+            </div>
+
+            <p>
+              Freon-based refrigeration and cold-storage
+              installation for food-processing facilities.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Refrigeration</span>
+              <span class="tag">Freon</span>
+              <span class="tag">Food Processing</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- QATAR BUSULBA -->
+
+        <article class="project-card">
+
+          <div class="project-image">
+
+            <img
+              src="assets/projects/busulba.jpg"
+              alt="Bu Sulba Warehousing Qatar"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="project-placeholder">
+              <i class="fa-solid fa-warehouse"></i>
+            </div>
+
+          </div>
+
+          <div class="project-body">
+
+            <h4>
+              Bu Sulba Warehousing Park
+            </h4>
+
+            <div class="project-location">
+              Qatar
+            </div>
+
+            <p>
+              Large-scale Freon refrigeration
+              and cold-chain infrastructure.
+            </p>
+
+            <div class="tags">
+
+              <span class="tag">Refrigeration</span>
+              <span class="tag">Cold Chain</span>
+              <span class="tag">Freon</span>
+
+            </div>
+
+          </div>
+
+        </article>
+
 
       </div>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     SALESFORCE VIDEOS
+========================= -->
 
 <section id="salesforce-videos">
+
   <div class="container">
 
-```
-<div class="section-header">
-  <span class="section-label">Video Portfolio</span>
-  <h2>Salesforce Videos</h2>
-  <p>
-    Salesforce tutorials, administration, development, CPQ and
-    practical CRM solutions.
-  </p>
-</div>
-
-<div class="video-grid">
-
-  <!-- Video 1 -->
-  <div class="video-item">
-    <iframe
-      src="https://www.youtube.com/embed/EEL95sT1yoI"
-      title="Salesforce Tutorial"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- Video 2 -->
-  <div class="video-item">
-    <iframe
-      src="https://www.youtube.com/embed/XCzrDvARR3s"
-      title="Salesforce Administration"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- Video 3 -->
-  <div class="video-item">
-    <iframe
-      src="https://www.youtube.com/embed/0B8A4skQKBE"
-      title="Salesforce Development"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <!-- Video 4 -->
-  <div class="video-item">
-    <iframe
-      src="https://www.youtube.com/embed/-67dokkcOeQ"
-      title="Salesforce CPQ"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-</div>
-
-<div class="youtube-button">
-  <a href="https://www.youtube.com/@SalesforceAdmin-xk3pi"
-     target="_blank"
-     rel="noopener noreferrer">
-    View All Salesforce Videos on YouTube
-  </a>
-</div>
-```
-
-  </div>
-</section>
-
-  
-<section id="gallery">
-  <div class="container">
     <div class="section-header">
-      <span class="section-label">Visual Portfolio</span>
-      <h2>Project Gallery</h2>
-      <p>Real project photos, site activities, equipment, installations and commissioning work.</p>
+
+      <span class="section-label">
+        Video Portfolio
+      </span>
+
+      <h2>
+        Salesforce Videos
+      </h2>
+
+      <p>
+        Salesforce tutorials, administration, development,
+        CPQ and practical CRM solutions.
+      </p>
+
     </div>
 
-   <div class="gallery-grid">
-      <div class="gallery-item"><img src="assets/1.jpg" alt="Project Site"><div class="gallery-caption"></div></div>
-      <div class="gallery-item"><img src="assets/2.jpg" alt="Refrigeration Installation"><div class="gallery-caption"></div></div>
-      <div class="gallery-item"><img src="assets/3.jpg" alt="Piping and Equipment"><div class="gallery-caption"></div></div>
-      <div class="gallery-item"><img src="assets/4.jpg" alt="Site Execution"><div class="gallery-caption"></div></div>
+
+    <div class="video-grid">
+
+
+      <div class="video-item">
+
+        <iframe
+          src="https://www.youtube.com/embed/EEL95sT1yoI"
+          title="Salesforce Tutorial"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+
+      <div class="video-item">
+
+        <iframe
+          src="https://www.youtube.com/embed/XCzrDvARR3s"
+          title="Salesforce Administration"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+
+      <div class="video-item">
+
+        <iframe
+          src="https://www.youtube.com/embed/0B8A4skQKBE"
+          title="Salesforce Development"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+
+      <div class="video-item">
+
+        <iframe
+          src="https://www.youtube.com/embed/-67dokkcOeQ"
+          title="Salesforce CPQ"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+
+      </div>
+
+
     </div>
+
+
+    <div class="youtube-button">
+
+      <a
+        href="https://www.youtube.com/@SalesforceAdmin-xk3pi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View All Salesforce Videos on YouTube
+      </a>
+
+    </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-header">
+
+      <span class="section-label">
+        Visual Portfolio
+      </span>
+
+      <h2>
+        Project Gallery
+      </h2>
+
+      <p>
+        Real project photos, site activities, equipment,
+        installations and commissioning work.
+      </p>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <img
+          src="assets/1.jpg"
+          alt="Project Site"
+        >
+        <div class="gallery-caption"></div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="assets/2.jpg"
+          alt="Refrigeration Installation"
+        >
+        <div class="gallery-caption"></div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="assets/3.jpg"
+          alt="Piping and Equipment"
+        >
+        <div class="gallery-caption"></div>
+      </div>
+
+      <div class="gallery-item">
+        <img
+          src="assets/4.jpg"
+          alt="Site Execution"
+        >
+        <div class="gallery-caption"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     SKILLS
+========================= -->
 
 <section id="skills">
+
   <div class="container">
-    <div class="section-header"><span class="section-label">Expertise</span><h2>Technical Skills</h2></div>
+
+    <div class="section-header">
+
+      <span class="section-label">
+        Expertise
+      </span>
+
+      <h2>
+        Technical Skills
+      </h2>
+
+    </div>
+
 
     <div class="skills-grid">
-      <div class="skill-card"><i class="fa-solid fa-cloud"></i><h3>Salesforce</h3><p>Sales Cloud, Service Cloud, Salesforce CPQ, Loyalty Management, Scheduler and Force.com.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-code"></i><h3>Development</h3><p>Apex, Apex Classes, Apex Triggers, Visualforce, SOQL and SOSL.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-gears"></i><h3>Administration & Automation</h3><p>Profiles, Roles, Permission Sets, Security, Flows, Workflows, Approvals and Validation Rules.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-network-wired"></i><h3>Integration</h3><p>Connected Apps, APIs, Change Data Capture, Platform Events and MuleSoft Composer.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-chart-line"></i><h3>Analytics & Data</h3><p>Reports, Dashboards, Data Loader, Workbench, Salesforce Inspector, SQL Server, Power BI and Tableau.</p></div>
-      <div class="skill-card"><i class="fa-solid fa-industry"></i><h3>Engineering</h3><p>Ammonia & Freon Refrigeration, Cold Storage, HVAC Chilled Water, Piping, Commissioning and Project Coordination.</p></div>
+
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-cloud"></i>
+
+        <h3>
+          Salesforce
+        </h3>
+
+        <p>
+          Sales Cloud, Service Cloud, Salesforce CPQ,
+          Loyalty Management, Scheduler and Force.com.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-code"></i>
+
+        <h3>
+          Development
+        </h3>
+
+        <p>
+          Apex, Apex Classes, Apex Triggers,
+          Visualforce, SOQL and SOSL.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-gears"></i>
+
+        <h3>
+          Administration & Automation
+        </h3>
+
+        <p>
+          Profiles, Roles, Permission Sets, Security,
+          Flows, Workflows, Approvals and Validation Rules.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-network-wired"></i>
+
+        <h3>
+          Integration
+        </h3>
+
+        <p>
+          Connected Apps, APIs, Change Data Capture,
+          Platform Events and MuleSoft Composer.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        <h3>
+          Analytics & Data
+        </h3>
+
+        <p>
+          Reports, Dashboards, Data Loader, Workbench,
+          Salesforce Inspector, SQL Server, Power BI and Tableau.
+        </p>
+
+      </div>
+
+
+      <div class="skill-card">
+
+        <i class="fa-solid fa-industry"></i>
+
+        <h3>
+          Engineering
+        </h3>
+
+        <p>
+          Ammonia & Freon Refrigeration, Cold Storage,
+          HVAC Chilled Water, Steam Boilers, Piping,
+          Commissioning and Project Coordination.
+        </p>
+
+      </div>
+
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
 
 <section id="certifications">
+
   <div class="container">
-    <div class="section-header"><span class="section-label">Credentials</span><h2>Certifications</h2></div>
+
+    <div class="section-header">
+
+      <span class="section-label">
+        Credentials
+      </span>
+
+      <h2>
+        Certifications
+      </h2>
+
+    </div>
+
 
     <div class="cert-grid">
-      <div class="cert-card"><div class="cert-icon"><i class="fa-solid fa-certificate"></i></div><div><h3>Salesforce Certified Administrator</h3><p>Salesforce Certification</p></div></div>
-      <div class="cert-card"><div class="cert-icon"><i class="fa-solid fa-code"></i></div><div><h3>Salesforce Platform Developer I</h3><p>Salesforce Certification</p></div></div>
+
+
+      <div class="cert-card">
+
+        <div class="cert-icon">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+
+        <div>
+
+          <h3>
+            Salesforce Certified Administrator
+          </h3>
+
+          <p>
+            Salesforce Certification
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="cert-card">
+
+        <div class="cert-icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <div>
+
+          <h3>
+            Salesforce Platform Developer I
+          </h3>
+
+          <p>
+            Salesforce Certification
+          </p>
+
+        </div>
+
+      </div>
+
+
     </div>
+
 
     <div style="text-align:center;margin-top:25px">
-      <a href="https://www.salesforce.com/trailblazer/pdibba" target="_blank" class="btn btn-primary">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i> View Trailhead Profile
+
+      <a
+        href="https://www.salesforce.com/trailblazer/pdibba"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+      >
+
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        View Trailhead Profile
+
       </a>
+
     </div>
+
   </div>
+
 </section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
 
 <section>
+
   <div class="container">
-    <div class="section-header"><span class="section-label">Education</span><h2>Academic Background</h2></div>
-    <div class="card" style="max-width:800px;margin:auto;text-align:center">
-      <i class="fa-solid fa-graduation-cap" style="font-size:2rem;color:#0b5cab;margin-bottom:15px"></i>
-      <h3>Bachelor of Technology (B.Tech)</h3>
-      <p>Electronics & Communication Engineering</p>
-      <p style="color:#6b7a90">Jawaharlal Nehru Technological University, Hyderabad<br>2013</p>
+
+    <div class="section-header">
+
+      <span class="section-label">
+        Education
+      </span>
+
+      <h2>
+        Academic Background
+      </h2>
+
     </div>
+
+
+    <div
+      class="card"
+      style="max-width:800px;margin:auto;text-align:center"
+    >
+
+      <i
+        class="fa-solid fa-graduation-cap"
+        style="font-size:2rem;color:#0b5cab;margin-bottom:15px"
+      ></i>
+
+      <h3>
+        Bachelor of Technology (B.Tech)
+      </h3>
+
+      <p>
+        Electronics & Communication Engineering
+      </p>
+
+      <p style="color:#6b7a90">
+
+        Jawaharlal Nehru Technological University, Hyderabad
+
+        <br>
+
+        2013
+
+      </p>
+
+    </div>
+
   </div>
+
 </section>
 
-<section class="contact-section" id="contact">
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section
+  class="contact-section"
+  id="contact"
+>
+
   <div class="container">
+
     <div class="section-header">
-      <span class="section-label" style="color:#00a1e0">Get In Touch</span>
-      <h2>Let's Connect</h2>
-      <p>Open to Salesforce, CRM, technical sales and project engineering opportunities.</p>
+
+      <span
+        class="section-label"
+        style="color:#00a1e0"
+      >
+        Get In Touch
+      </span>
+
+      <h2>
+        Let's Connect
+      </h2>
+
+      <p>
+        Let's connect for engineering, technical sales,
+        CRM, Salesforce and business technology opportunities.
+      </p>
+
     </div>
+
 
     <div class="contact-grid">
-      <div class="contact-card"><i class="fa-solid fa-envelope"></i><h3>Email</h3><a href="mailto:dpruthvi91@gmail.com">dpruthvi91@gmail.com</a></div>
-      <div class="contact-card"><i class="fa-solid fa-phone"></i><h3>Mobile</h3><a href="tel:+971503543197">+971 50 354 3197</a></div>
-      <div class="contact-card"><i class="fa-brands fa-linkedin"></i><h3>LinkedIn</h3><a href="https://www.linkedin.com/" target="_blank">Connect on LinkedIn</a></div>
+
+
+      <div class="contact-card">
+
+        <i class="fa-solid fa-envelope"></i>
+
+        <h3>
+          Email
+        </h3>
+
+        <a href="mailto:dpruthvi91@gmail.com">
+          dpruthvi91@gmail.com
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <h3>
+          Mobile
+        </h3>
+
+        <a href="tel:+971503543197">
+          +971 50 354 3197
+        </a>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <h3>
+          LinkedIn
+        </h3>
+
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Connect on LinkedIn
+        </a>
+
+      </div>
+
+
     </div>
 
-    <div style="text-align:center;margin-top:35px">
-      <a href="mailto:dpruthvi91@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+
+    <div
+      style="text-align:center;margin-top:35px"
+    >
+
+      <a
+        href="mailto:dpruthvi91@gmail.com"
+        class="btn btn-primary"
+      >
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Contact Me
+
+      </a>
+
     </div>
+
   </div>
+
 </section>
 
+
+<!-- =========================
+     FOOTER
+========================= -->
+
 <footer>
-  <p>© 2026 Pruthvi Kumar Dibba | Salesforce Developer | CRM | Project Engineering</p>
+
+  <p>
+    © 2026 Pruthvi Kumar Dibba |
+    HVAC Project Engineer |
+    Technical Sales |
+    Salesforce & CRM
+  </p>
+
 </footer>
 
-<div class="modal" id="videoModal">
+
+<!-- =========================
+     PROJECT VIDEO MODAL
+========================= -->
+
+<div
+  class="modal"
+  id="videoModal"
+>
+
   <div class="modal-content">
-    <span class="modal-close" onclick="closeVideo">&times;</span>
-    <video id="projectVideo" controls></video>
+
+    <span
+      class="modal-close"
+      onclick="closeVideo()"
+    >
+      &times;
+    </span>
+
+    <video
+      id="projectVideo"
+      controls
+    ></video>
+
   </div>
+
 </div>
 
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
 <script>
+
 function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
+
+  document
+    .getElementById("navLinks")
+    .classList
+    .toggle("active");
+
 }
+
 
 function openVideo(videoPath){
-  const modal=document.getElementById("videoModal");
-  const video=document.getElementById("projectVideo");
-  video.src=videoPath;
+
+  const modal =
+    document.getElementById("videoModal");
+
+  const video =
+    document.getElementById("projectVideo");
+
+  video.src = videoPath;
+
   modal.classList.add("active");
+
   video.play();
+
 }
+
 
 function closeVideo(){
-  const modal=document.getElementById("videoModal");
-  const video=document.getElementById("projectVideo");
+
+  const modal =
+    document.getElementById("videoModal");
+
+  const video =
+    document.getElementById("projectVideo");
+
   video.pause();
-  video.src="";
+
+  video.src = "";
+
   modal.classList.remove("active");
+
 }
 
-document.getElementById("videoModal").addEventListener("click",function(event){
-  if(event.target===this) closeVideo();
-});
 
-document.querySelectorAll(".nav-links a").forEach(function(link){
-  link.addEventListener("click",function(){
-    document.getElementById("navLinks").classList.remove("active");
+document
+  .getElementById("videoModal")
+  .addEventListener(
+    "click",
+    function(event){
+
+      if(event.target === this){
+
+        closeVideo();
+
+      }
+
+    }
+  );
+
+
+document
+  .querySelectorAll(".nav-links a")
+  .forEach(function(link){
+
+    link.addEventListener(
+      "click",
+      function(){
+
+        document
+          .getElementById("navLinks")
+          .classList
+          .remove("active");
+
+      }
+    );
+
   });
-});
+
 </script>
 
 </body>
